@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportViolenceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Hi Laureen,"
+            android:id="@+id/display"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Have you been harassed based on your gender? Complete the form below to get assistance.."
+            android:textSize="18sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:id="@+id/spViolence"
+            android:background="@drawable/edt_bg"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtDescription"
+            android:background="@drawable/edt_bg"
+            android:hint="Description" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtPhone"
+            android:inputType="number"
+            android:background="@drawable/edt_bg"
+            android:hint="Phone" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtLocation"
+            android:background="@drawable/edt_bg"
+            android:hint="Location" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:shadowColor="@color/purple_700"
+            android:id="@+id/cbTerms"
+            android:checked="true"
+            android:layout_marginTop="20dp"
+            android:text="By using our service  you agree to our terms of service"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnReport"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            android:text="report now" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:id="@+id/progessBar"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>
